@@ -1,0 +1,56 @@
+@import "variable";
+@import "mixin";
+
+@font-face {
+    font-family: Gordita;
+    src: url(../fonts/Gordita-Regular.ttf);
+    font-weight:400;
+    font-style:normal;
+}
+@font-face {
+    font-family: Gordita-Medium;
+    src: url(../fonts/Gordita-Medium.ttf);
+    font-weight:500;
+    font-style:normal;
+}
+@font-face {
+    font-family: Gordita-Bold;
+    src: url(../fonts/Gordita-Bold.ttf);
+    font-weight:700;
+    font-style:normal;
+}
+
+.h1{
+    font-style:Gordita-Bold, sans-serif;
+    font-size: 50px;
+    line-height: 71 / 50 * 100%;
+}
+.desc{
+    font-family: Gordita, sans-serif;
+    font-size: 18px;
+    line-height: 26 / 18 * 100%;   
+}
+.h2{
+    font-family: Gordita-Medium, sans-serif;
+    font-size: 36px;
+    line-height: 42 / 36 * 100%;
+}
+.button-teks{
+    font-family: Gordita-Medium, sans-serif;
+    font-size: 22px;
+    line-height: 31 / 21 * 100%;
+}
+
+
+//header
+header li a{
+    font-family: Gordita-Medium, sans-serif;
+    font-size: 16px;
+    line-height: 23 / 16 * 100%;
+    color: $WarnaTeks !important;    
+}
+
+//client
+.client *{
+    color: $WarnaTeks;
+}

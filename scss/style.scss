@@ -1,0 +1,86 @@
+@import "variable";
+@import "mixin";
+.container-main {
+    max-width: 1280px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.container-header {
+    max-width: 1280px;
+    padding: 0 10px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+body {
+    background: #fafafa !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+//intro
+.intro {
+    &__main {
+        background: url(../images/intro__main.png) no-repeat right bottom,
+            url(../images/Background__intro.png) no-repeat center;
+        border-radius: 35px;
+        padding: 216px 76px;
+        h1,
+        p {
+            color: white;
+        }
+        p {
+            max-width: 435px;
+            margin: 20px 0 30px 0;
+        }
+        a {
+            background: white;
+            border-radius: 35px;
+            padding: 18px 53px;
+        }
+    }
+    &__card {
+        transform: translate(0, -75px);
+        overflow: hidden;
+        max-width: 1039px;
+        margin: 0 auto;
+        background: #14213d;
+        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+        border-radius: 35px;
+        padding: 97px 45px 97px 60px;
+        color: white;
+        > div:last-child {
+            display: grid;
+            gap: 40px;
+        }
+        &__overlay {
+            background: url(../images/intro__card.svg) no-repeat center/cover;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 35px;
+            z-index:-1;
+        }
+        a {
+            right: 60px;
+            bottom: 46px;
+        }
+    }
+}
+
+//client
+.client{
+    margin-bottom: 100px;
+    > div{
+        gap:27px;
+    }
+    > div img:last-child{
+        margin-top: 20px;
+    }
+    p{
+        margin:25px 0 56px 0;
+    }
+}

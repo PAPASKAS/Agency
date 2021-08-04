@@ -1,0 +1,23 @@
+@import "variable";
+@import "mixin";
+
+//intro
+@media (max-width:$md) {
+    .intro__main{
+        background:url(../images/Background__intro.png) no-repeat center;
+        padding: 150px 30px;
+    }
+}
+@media (max-width:$sm) {
+    .intro__main{
+        padding: 100px 15px;
+    }
+}
+
+
+//client
+@media (max-width:$md) {
+    .client{
+        margin-top:30px;
+    }
+}
